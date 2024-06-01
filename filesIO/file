@@ -1,0 +1,3 @@
+there are two types of files:
+1. binary files(.jpg, .dat  etc)   'rb' will open the read for files in binary mode
+2. text files(.txt, .c, etc)       'rt' will open the read for files in text mode 

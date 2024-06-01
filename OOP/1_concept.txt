@@ -1,0 +1,61 @@
+- Solving problem by creating an object
+- it implements DRY principle (Donot Repeat Yourself)
+- it focus on reusable code
+
+
+
+
+Class Employee:    -----------> classname is written in PascalCase
+    #property/variables % methods(function)  
+
+PascalCase
+EmployeeName  ----> PascalCase   here 'P' and 'C ' are capital i.e. every word is capital
+
+camelCase
+isNumeric, isFloatOrInt  ----->camelCase here, first character is always small and other word has first character capital
+
+
+Abstraction
+---> objects of the given can invoke the methods available to it without revealing the implementation details to the user
+
+Encapsulation
+----> autai type of entities autai ma rakhne, putting in one capsule
+
+
+Noun --------------> Class -------------> Employee
+Adjetive ----------> Attributes --------> name, age ,salary
+Verbs -------------> Methods -----------> getSalary(), increment()
+
+
+Class Attributes
+An Attributes that belongs to the class rather than a particular object
+
+
+instance Attributes
+An Attribute that belongs to the instance(object) Asuuming the class from the previous example(ex. Employee.py)
+
+note: instance attribute takes preference over class attribute during assignment and retreival
+
+
+static methods
+Sometimes we need a function thatdoesnot use self parameter, for that we use static Method
+yo chai hamle class ma function vanauda self use nagari pani output nikalnu xa vane use garinxa
+@staticmethod -------> decorator to mark greet as a static method
+def greet()
+    print("Good morning)
+
+
+for eg.
+
+class Employee:
+    company="Google"
+    def getSalary(self):
+        print(f"Salary of this employee working in {self.company} is {self.salary}")
+    
+    def greet(): #yedi () bitra self lekhena vane error throw garxa but yesko mathi hamile @staticmethod lekhyeu vane it will be okay
+        print("Good morning, sir")
+
+sujan= Employee()
+sujan.salary=10000
+# sujan.getSalary() # Employee.getSalary(sujan)
+sujan.greet()

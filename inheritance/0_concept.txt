@@ -1,0 +1,24 @@
+class Employee:  ------> base/parent class
+    #code
+class Programmer(Employee()): ----> child class/derived class
+    #code
+
+note: if we have to print the attributes we use; print(a.attributes)
+        if we have to print method/function we use; a.functionName
+
+
+types of inheritance:
+1. single inheritance:-> single inheritance occurs when child class inherits only a single parent class
+
+2. multiple inheritance:-> multiple inheritance occurs when child class inherits from more than one parent class
+
+3. multilevel inheritance:->  multilevel inheritance occurs when a child class becomes a parent for another child class
+
+
+super method
+super method is used to access the methods of a super classs in the derived class
+   super.__init__()  -> call constructor of base class
+
+
+class method
+a method that is bound with the class but not with the objects
